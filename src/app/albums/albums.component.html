@@ -1,0 +1,18 @@
+    <div class="card-columns">
+        <div class="card" *ngFor="let item of nuevasCanciones">
+            <img class="card-img-top" src="{{item.images[0].url}}" alt="Card image cap">
+            <div class="card-body">
+
+                <h6 class="card-subtitle mb-2 text-muted">Name album: </h6>
+                <p class="card-text">{{item.name}}</p>
+                <h6 class="card-subtitle text-muted">Artists:</h6>
+                <ul class="list-group list-group-flush">
+                    <li *ngFor="let artist of item.artists" class="list-group-item">
+                        {{artist.name}}</li>
+                  </ul>
+                  <h6 class="card-subtitle mb-2 text-muted">Date:</h6>
+                <p class="card-text">{{item.release_date}}</p>
+            <!-- <a href="{{item.uri}}" class="card-link">{{item.uri}}</a> -->
+            </div>
+            </div>
+        </div>
