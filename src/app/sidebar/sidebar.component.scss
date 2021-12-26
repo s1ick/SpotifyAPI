@@ -101,9 +101,12 @@ header#mainHeader {
                     left: -80px;
                     text-transform: uppercase;
                     transition: left 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045),
-                        opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+                    opacity 0.15s cubic-bezier(0.6, -0.28, 0.735, 0.045);
                     color: #fff;
                     text-decoration: none;
+                    line-height: 40px;
+                    display: block;
+                    height: 40px
                 }
                 &:before {
                     z-index: 10;

@@ -1,1 +1,4 @@
-<p>header works!</p>
+
+<ng-select >
+    <ng-option *ngFor="let album of nuevasCanciones" [value]="album.name">{{album.name}}</ng-option>
+ </ng-select>
