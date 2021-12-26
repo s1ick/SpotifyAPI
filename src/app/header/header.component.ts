@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { SpotifyService } from '../services/spotify.service';
 @Component({
@@ -5,8 +6,8 @@ import { SpotifyService } from '../services/spotify.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
 
+export class HeaderComponent implements OnInit {
   nuevasCanciones: any[] = []
   constructor(private service: SpotifyService) { }
   ngOnInit(): void {
@@ -16,4 +17,5 @@ export class HeaderComponent implements OnInit {
       this.nuevasCanciones = data.albums.items;
     });
   }
+
 }

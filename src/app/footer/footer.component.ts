@@ -11,6 +11,8 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
   audioList = [
     {
       url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
@@ -28,4 +30,5 @@ export class FooterComponent implements OnInit {
       cover: "https://i1.sndcdn.com/artworks-000249294066-uow7s0-t500x500.jpg"
     }
   ];
+
 }

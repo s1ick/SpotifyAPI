@@ -6,6 +6,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 const routes: Routes = [
   {path: 'albums', component: AlbumsComponent },
   {path: '', component: HomePageComponent }
+
 ];
 
 @NgModule({
